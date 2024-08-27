@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 20px;
+    text-align: center;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffb385;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #282828;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
+
+#about, #services, #gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-card {
+    /* Services Section */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-card {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+    color: #fff;
+    text-align: left;
+}
+
+/* Flexbox Layout for Service Cards */
+#services .service-card-container {
+    display: flex;
+    justify-content: center; /* Centers the cards horizontally */
+    flex-wrap: wrap; /* Wraps the cards to the next line if they don't fit in one row */
+    gap: 20px; /* Adds space between the cards */
+}
+
+#services .service-card h3 {
+    margin-top: 0;
+}
+
+#services .service-card p {
+    margin-bottom: 0;
+}
+
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #888;
+}

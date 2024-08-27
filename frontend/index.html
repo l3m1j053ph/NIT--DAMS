@@ -1,22 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Gen Z Vibe Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Elevate Your Visual Storytelling: Effortless Asset Management for Modern Photographers</h1>
+        <nav>
+            <h1>Gen Z Studio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <p>“Transform your photography studio with our cutting-edge Digital Asset Management System. Effortlessly organize, search, and share your visual assets in seconds. Perfect for creatives who want to streamline their workflow and impress clients with flawless, efficient delivery.”</p>
-        <button id="myButton">Get Started !</button>
-    </main>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to the Future</h2>
+            <p>Innovative Solutions for the Next Generation</p>
+            <button id="exploreBtn">Explore More</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of Gen Z innovators, creating cutting-edge solutions with a fresh perspective.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-card-container">
+            <div class="service-card">
+                <h3>Photography</h3>
+                <p>High-quality photos capturing breathtaking moments.</p>
+            </div>
+            <div class="service-card">
+                <h3>Videography</h3>
+                <p>Engaging videos that tell your story.</p>
+            </div>
+            <div class="service-card">
+                <h3>Content Creation</h3>
+                <p>Unique content tailored for the digital age.</p>
+            </div>
+            <div class="service-card">
+                <h3>Studio Hire</h3>
+                <p>State-of-the-art studio available for your creative needs.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1720491468850-368cd24ce9d5?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1669173034813-fff51b1ee64d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBhcnR5JTIwdmliZXxlbnwwfHwwfHx8MA%3D%3D" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="https://assets.mixkit.co/videos/52502/52502-thumb-360-0.jpg" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="https://assets.mixkit.co/videos/52477/52477-thumb-360-0.jpg" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <p>© 2024 Gen Z Studio. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
