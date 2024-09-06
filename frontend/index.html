@@ -1,93 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gen Z Vibe Website</title>
+    <title>DAMS - NIT Studio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-</head>
+    <style>
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .card:hover {
+            background-color: #f0f0f0;
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+        }
+        a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits text color from the parent element */
+}
 
+    </style>
+</head>
 <body>
     <header>
-        <nav>
-            <h1>NIT Studio</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>DAMS</h1>
+            <p>Your Digital Assessment Management System</p>
+        </div>
     </header>
-
-    <section id="home">
-        <div class="hero">
-            <h2>Welcome to the Future</h2>
-            <p>Innovative Solutions for the Next Generation</p>
-            <button id="exploreBtn">Explore More</button>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a team of Gen Z innovators, creating cutting-edge solutions with a fresh perspective.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-card-container">
-            <div class="service-card">
-                <h3>Photography</h3>
-                <p>High-quality photos capturing breathtaking moments.</p>
+    <main>
+        <section class="intro">
+            <h2>Welcome to the Future of Assessment Management</h2>
+            <p>Efficiently manage your assessments with style and simplicity.</p>
+            <button class="cta-button">Get Started</button>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <a href="track-assessment.html" class="Card">
+                <img src="" alt="Track Assessments">
+                <h3>Track Assessments</h3>
+                <p>Monitor all your assessments in one place with ease.</p>
+                </a>
             </div>
-            <div class="service-card">
-                <h3>Videography</h3>
-                <p>Engaging videos that tell your story.</p>
+            <div class="feature-card">
+                <a href="real-time-updates.html" class="Card">
+                <img src="C:\Users\Lemi\OneDrive\Desktop\real time.webp" alt="Real-Time Updates">
+                <h3>Real-Time Updates</h3>
+                <p>Receive instant notifications and stay updated.</p>
+                </a>
             </div>
-            <div class="service-card">
-                <h3>Content Creation</h3>
-                <p>Unique content tailored for the digital age.</p>
+            <div class="feature-card">
+                <a href="easy-management.html" class="Card">
+                <img src="C:\Users\Lemi\Downloads\DALL·E 2024-09-04 20.51.23 - A detailed image representing 'easy management.' The image features a sleek tablet screen displaying a simplified, intuitive interface with clear icon.webp" alt="Easy Management">
+                <h3>Easy Management</h3>
+                <p>Manage tasks effortlessly with our intuitive interface.</p>
+            </a>
             </div>
-            <div class="service-card">
-                <h3>Studio Hire</h3>
-                <p>State-of-the-art studio available for your creative needs.</p>
+        </section>
+        <section class="testimonial">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-card">
+                <p>"DAMS has transformed our assessment processes. It's sleek, intuitive, and efficient!"</p>
+                <h4>Lemi Joseph</h4>
+                <p>Product Manager</p>
             </div>
-        </div>
-    </section>
-    
-
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1720491468850-368cd24ce9d5?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1669173034813-fff51b1ee64d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBhcnR5JTIwdmliZXxlbnwwfHwwfHx8MA%3D%3D" alt="Gallery Image 2">
-            </div>
-            <div class="gallery-item">
-                <video controls>
-                    <source src="https://assets.mixkit.co/videos/52502/52502-thumb-360-0.jpg" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="gallery-item">
-                <video controls>
-                    <source src="https://assets.mixkit.co/videos/52477/52477-thumb-360-0.jpg" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer>
-        <p>© 2024 Gen Z Studio. All Rights Reserved.</p>
+        <p>&copy; 2024 NIT Studio. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
-
 </html>

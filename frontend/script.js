@@ -1,12 +1,18 @@
-document.getElementById('exploreBtn').addEventListener('click', function () {
-    alert('Welcome to the Future!');
-});
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("DAMS frontend loaded");
 
-// Example of a simple lightbox functionality (optional enhancement)
-const galleryItems = document.querySelectorAll('.gallery-item');
+    // Smooth scroll for the Get Started button
+    document.querySelector('.cta-button').addEventListener('click', function() {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    });
 
-galleryItems.forEach(item => {
-    item.addEventListener('click', () => {
-        alert('This can be expanded into a full-screen lightbox viewer!');
+    // Interactive feature card hover effects
+    document.querySelectorAll('.feature-card').forEach(card => {
+        card.addEventListener('mouseover', function() {
+            card.style.transform = 'scale(1.05)';
+        });
+        card.addEventListener('mouseout', function() {
+            card.style.transform = 'scale(1)';
+        });
     });
 });
